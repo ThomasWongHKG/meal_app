@@ -25,13 +25,10 @@ class MealItem extends StatelessWidget {
     switch (complexity) {
       case Complexity.Simple:
         return 'Simple';
-        break;
       case Complexity.Challenging:
         return 'Challenging';
-        break;
       case Complexity.Hard:
         return 'Hard';
-        break;
       default:
         return 'Unknown';
     }
@@ -132,7 +129,7 @@ class MealItem extends StatelessWidget {
                     SizedBox(
                       width: 6,
                     ),
-                    Text('$complexityText'),
+                    Text(complexityText),
                   ]),
                   Row(
                     children: <Widget>[
@@ -143,7 +140,7 @@ class MealItem extends StatelessWidget {
                         width: 6,
                       ),
                       Text(
-                        '$affordabailityText',
+                        affordabailityText,
                       ),
                     ],
                   ),
